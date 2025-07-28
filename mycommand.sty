@@ -1,0 +1,623 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%++++++++++++++++>>>>>>>>>>>>>
+%  LAST UPDATE : Nov 24, 2016 
+%\renewcommand{\baselinestretch}{1.2}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bes}{\begin{equation*}}
+\newcommand{\ees}{\end{equation*}}
+\newcommand{\ber}{\begin{eqnarray}}
+\newcommand{\eer}{\end{eqnarray}}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+%\newcommand{\ba}{\begin{array}}  % Obsolete
+%\newcommand{\ea}{\end{array}}        % Obsolete
+\newcommand{\barr}{\begin{array}}
+\newcommand{\earr}{\end{array}}     
+\newcommand{\bnu}{\begin{enumerate}} 
+\newcommand{\enu}{\end{enumerate}}
+%
+\newcommand{\disp}{\displaystyle}
+\renewcommand{\i}{\item}
+%%%%%%%%%%%%%%% Brackets etc. %%%%%%%%%%%%%%%%%%
+\newcommand{\eqv}{\equiv}
+\newcommand{\app}{\approx}
+\newcommand{\ph}{\phantom}
+\newcommand{\phs}{\phantom{.\!}}
+\newcommand{\pz}{^{\ph \dag}}
+\let\py\relax
+\providecommand{\py}{^{\ph \dag}}
+\newcommand{\f}{\frac}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lb}{\left(} % almost obsolete
+\newcommand{\rb}{\right)} % almost obsolete
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\ua}{\uparrow}
+\newcommand{\da}{\downarrow}
+\newcommand{\corr}{\leftrightarrow}
+\newcommand{\bl}{\bigg[}
+\newcommand{\br}{\bigg]}
+\newcommand{\blbr}{\bigg\{}
+\newcommand{\brbr}{\bigg\}}
+\newcommand{\Bl}{\Bigg[}
+\newcommand{\Br}{\Bigg]}
+\newcommand{\bigv}{\bigg|}
+\newcommand{\Bigv}{\Bigg|}
+\newcommand{\lgr}{\lgroup}
+\newcommand{\rgr}{\rgroup}
+\newcommand{\lngl}{\langle}
+\newcommand{\rngl}{\rangle}
+\newcommand{\lngg}{\langle\langle}
+\newcommand{\rngg}{\rangle\rangle}
+\newcommand{\lnglng}{\langle\langle}
+\newcommand{\rngrng}{\rangle\rangle}
+\newcommand{\un}{\underline}
+\newcommand{\qd}{\quad}
+%%%%%%%%%%%%% Greek letters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\providecommand{\G}{\Gamma}
+\newcommand{\g}{\gamma}
+%\let\lw\l
+%\renewcommand\l{\lambda}
+\def\l{\lambda}
+\newcommand{\al}{\alpha}
+\newcommand{\bt}{\beta}
+\newcommand{\zt}{\zeta}
+\newcommand{\ab}{{\alpha\beta}}
+\newcommand{\ba}{{\beta\alpha}}
+\renewcommand{\aa}{{\alpha\alpha}}
+\newcommand{\bb}{{\beta\beta}}
+\newcommand{\tht}{\theta}
+\newcommand{\bet}{\beta}  %obsolete
+\newcommand{\sig}{{\sigma}}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\isig}{{i \sigma}}
+\newcommand{\jsig}{{j \sigma}}
+\newcommand{\Sigsec}{{\Sigma^{(2)}}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\teps}{\tilde{\epsilon}}
+\newcommand{\vareps}{\varepsilon}
+\newcommand{\veps}{\varepsilon}
+\newcommand{\vphi}{\varphi}
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+\newcommand{\del}{\delta}
+\newcommand{\delt}{\delta t}
+\newcommand{\Del}{\Delta}
+\newcommand{\Delt}{\Delta t}
+\newcommand{\nab}{\nabla}
+\newcommand{\grad}{\nabla}
+%\newcommand{\rh}{\varrho}
+\newcommand{\rh}{\rho}
+%%%%%%%%%%%%%%%% Math Commands %%%%%%%%%
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mr}{\mathrm}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\bmath}{\boldmath}
+%%%%%%%%%%%%%%%%%% Operations %%%%%%%%%%%%%%%
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\const}{\text{const}}
+\newcommand{\op}{\circ}
+\newcommand{\h}{\hat}
+%%\newcommand{\b}{\bar}
+\newcommand{\x}{\dag}
+\newcommand{\y}{^\dag}
+\newcommand{\T}{{\bf T}} % Transpose 
+\newcommand{\non}{\nonumber}
+\newcommand{\sq}{{^{2}}}
+\newcommand{\cu}{{^{3}}}
+\newcommand{\hf}{\f{1}{2}}
+\newcommand{\quart}{\f{1}{4}}
+\newcommand{\inv}{{^{-1}}}
+\newcommand{\nint}{\int_{-\infty}^{\infty}} % natural integral
+\newcommand{\invnint}{\int_{\infty}^{-\infty}} % reversed natural integral
+\renewcommand{\fint}{\int_{-\infty}^0} %int up to Fermi level
+\newcommand{\mint}{\int_{-\infty}^\mu} %int up to chemical potential
+\newcommand{\zint}{\int_{-\infty}^0} %int up to 0
+\newcommand{\ztoiint}{\int_0^\infty} %int up to infinity from zero
+\newcommand{\bint}{\int_0^\beta} %int from 0 to beta
+\newcommand{\cint}{\oint_C} %int over contour C
+\newcommand{\mccint}{\oint_C} %int over contour C
+\newcommand{\dbar}{d\hspace*{-0.08em}\bar{}\hspace*{0.1em}}
+\newcommand{\pd}{\partial}
+\newcommand{\pdt}{{\pd_t}}
+\newcommand{\pdtau}{{\pd_\tau}}
+\newcommand{\pddt}{\f{\pd}{\pd t}}
+\newcommand{\pddx}{\f{\pd}{\pd x}}
+\newcommand{\ddt}{\f{d}{d t}}
+\newcommand{\ddx}{\f{d}{d x}}
+\newcommand{\ddxsq}{\f{d\sq}{d x}}
+\newcommand{\ddtau}{\f{d}{d \tau}}
+\newcommand{\pddtau}{\f{\pd}{\pd \tau}}
+\newcommand{\pdtsq}{\f{\pd\sq}{\pd t\sq}}
+\newcommand{\pdxsq}{\f{\pd\sq}{\pd x\sq}}
+%%%%%%%%%%%%%%%%%%% Vectors %%%%%%%%%%%%%
+%%%%%%%%%%%%  Vectors  %%%%%%%%%%%%%%%%%%%%%
+\newcommand{\one}{{\bf 1}}
+\newcommand{\av}{{\bf a}} %a-vector
+\newcommand{\Av}{{\bf A}}
+\newcommand{\pA}{{\bf A}}
+\newcommand{\bv}{{\bf b}} %b-vector
+\newcommand{\Bv}{{\bf B}}
+\newcommand{\cv}{{\bf c}}
+\newcommand{\dv}{{\bf d}}
+\newcommand{\Delv}{{\bs \Delta}}
+\newcommand{\Ev}{{\bf E}}
+\newcommand{\Fv}{{\bf F}}
+\newcommand{\Gv}{{\bf G}}
+\newcommand{\hv}{{\bf h}}
+\newcommand{\kv}{{\bf k}}
+\newcommand{\kvs}{{\kv \sigma}}
+\newcommand{\nk}{n,{\bf k}}
+\newcommand{\kvp}{{{\bf k}'}}
+\newcommand{\lv}{{\bf l}}
+\newcommand{\Lv}{{\bf L}}
+\newcommand{\Kv}{{\bf K}}
+\newcommand{\jv}{{\bf j}}
+\newcommand{\Jv}{{\bf J}}
+\newcommand{\Mv}{{\bf M}}
+\newcommand{\pv}{{\bf p}}
+\newcommand{\Pv}{{\bf P}}
+\newcommand{\phiv}{{\bs \phi}}
+\newcommand{\Phiv}{{\bs \Phi}}
+\newcommand{\qv}{{\bf q}}
+\newcommand{\qmkv}{{\bf q - k}}
+\newcommand{\Qv}{{\bf Q}}
+\newcommand{\rv}{{\bf r}} %r-vector
+\newcommand{\Rv}{{\bf R}} %R-vector
+\newcommand{\R}{{\bf R}}
+\newcommand{\sv}{{\bf s}} %s-vector
+\newcommand{\Sv}{{\bf S}} %S-vector
+\newcommand{\uv}{{\bf u}}
+\newcommand{\vv}{{\bf v}} 
+\newcommand{\Vv}{{\bf v}} 
+\newcommand{\wv}{{\bf w}}
+\newcommand{\xv}{{\bf x}}
+\newcommand{\yv}{{\bf y}}
+\newcommand{\zv}{{\bf z}}
+\newcommand{\kvb}{({\bf k})}
+\newcommand{\kvomb}{({\bf k},\om)}
+\newcommand{\mkvb}{(-{\bf k})}
+\newcommand{\kpqv}{{\bf k + q}}
+\newcommand{\kmqv}{{\bf k - q}}
+\newcommand{\zero}{{\bf 0}}
+%
+\newcommand{\ri}{{\bf r}_i}
+\newcommand{\rj}{{\bf r}_j}
+\newcommand{\Ri}{{\bf R}_i}
+\newcommand{\sigv}{{\bs \sig}}
+\newcommand{\Sigv}{{\bs \Sig}}
+\newcommand{\nv}{{\bf n}} %n-vector
+\newcommand{\ncap}{{\hat n}} %n-vector
+\newcommand{\sg}{{\bs \sig}} %\sigma-vector
+\newcommand{\tav}{{\bs \tau}} %\sigma-vector
+\newcommand{\tauv}{{\bs \tau}} %\sigma-vector
+\newcommand{\curl}{{\nabla\times}}
+%%%%%%%%%%%%%%%%%% Exponentials %%%%%%%%%%%%%%%%%%%%
+\newcommand{\ehzt}{e^{i\h H_0 t /\hbar}}
+\newcommand{\emhzt}{e^{i-\h H_0 t/\hbar}}
+\newcommand{\eht}{e^{i\h H t/\hbar}}
+\newcommand{\emht}{e^{-i\h H t/\hbar}}
+%%%%%%%%%%%%%%%%%%%%%%% Expressions %%%%%%%%%%%%%%%%%%%
+\newcommand{\btfac}{\frac{1}{\beta}\lim_{\eta\ra 0+}}
+\newcommand{\btinv}{\frac{1}{\beta}}
+\newcommand{\invbt}{\beta\inv}
+\newcommand{\limeta}{\lim_{\eta\ra 0+}}
+\newcommand{\omieta}{\om + i\eta}
+\newcommand{\exeta}{e^{i\omega_n \eta}}
+\newcommand{\bex}{\bt\sum_n\exeta}
+\newcommand{\snrmf}{\frac{1}{\sqrt{N}}}
+\newcommand{\obst}{\frac{1}{\sqrt{2}}}
+\newcommand{\nrmf}{{\frac{1}{N} }}
+%%%%%%%%%%%%% Summation %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sN}{\sum_{i=1}^N}
+\newcommand{\si}{\sum_i}
+\newcommand{\sj}{\sum_j}
+\newcommand{\osk}{\sum_{k}}  % k-sum in 1-D
+\newcommand{\oskp}{\sum_{k'}}  % k-sum in 1-D
+\newcommand{\oskk}{\sum_{kk'}}  % k-sum in 1-D
+\newcommand{\sk}{\sum_{\bf k}}
+\newcommand{\skv}{\sum_{\bf k}}
+\newcommand{\sqv}{\sum_{\bf q}}
+\newcommand{\skp}{\sum_{{\bf k}'}}
+\newcommand{\skk}{\sum_{{\bf kk}'}}
+\newcommand{\ska}{\sum_{{\bf k}\,\al}}
+\newcommand{\skb}{\sum_{{\bf k}\,\bt}}
+\newcommand{\skab}{\sum_{{\bf k}\,\al\bt}}
+\newcommand{\sks}{\sum_{{\bf k}\,\sig}}
+\newcommand{\sn}{\sum_n}
+\newcommand{\snn}{\sum_{nn'}}
+\newcommand{\sm}{\sum_m}
+\newcommand{\smm}{\sum_{mm'}}
+\newcommand{\sninf}{\sum_{n=-\infty}^{\infty}}
+\newcommand{\sminf}{\sum_{m=-\infty}^{\infty}}
+\newcommand{\spinf}{\sum_{p=-\infty}^{\infty}}
+\newcommand{\sal}{\sum_{\alpha}}
+\newcommand{\sbt}{\sum_{\beta}}
+\newcommand{\sab}{\sum_{\alpha\beta}}
+\newcommand{\sia}{\sum_{i\,\alpha}}
+\newcommand{\siab}{\sum_{i\,\alpha\beta}}
+\newcommand{\sr}{\sum_{\bf R}}
+\newcommand{\ssig}{\sum_{\sig}}
+\newcommand{\sis}{\sum_{i\sig}}
+\newcommand{\snk}{\sum_{n{\bf k}\sig}}
+\newcommand{\sijs}{\sum_{ij,\sigma}}
+\newcommand{\sij}{\sum_{ij}}
+\newcommand{\sinej}{\sum_{i\ne j}}
+\newcommand{\ijnn}{{\lngl ij\rngl}}
+\newcommand{\ijnns}{{\lngl ij\rngl}\sig}
+\newcommand{\sijnns}{\sum_{\lngl ij\rngl \sig}}
+\newcommand{\sijnn}{\sum_{\lngl ij\rngl}}
+\newcommand{\sijnnn}{\sum_{\lngl\lngl ij\rngl\rngl}}
+%%%%%%%%%%%%% Spins %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ks}{{{\bf k}\sigma}}
+\newcommand{\ka}{{\kv\,\al}}
+\newcommand{\ns}{n\sigma}
+%%%%%%%%%%%%%%%%%% GF's and expressions %%%%%%%%%%%
+\newcommand{\GF}{Green's function~}
+\newcommand{\GFs}{Green's functions~}
+\newcommand{\Ginv}{G\inv}
+\newcommand{\gc}{G^{cc}_\ks}
+\newcommand{\gcf}{G^{cf}_\ks}
+\newcommand{\gfc}{G^{fc}_\ks}
+\newcommand{\gf}{G^{ff}_\ks}
+% ---- Matsubara ---
+\newcommand{\ion}{i\om_n}
+\newcommand{\iop}{i\om_p}
+\newcommand{\iom}{i\om_n}
+\newcommand{\iz}{i0^+}
+\newcommand{\inm}{i\nu_m} % normally for Matsubara Bose frequency
+\newcommand{\iomm}{i\om_m} % obsolete 
+\newcommand{\ionb}{(i\om_n)}
+\newcommand{\iopb}{(i\om_p)}
+\newcommand{\inmb}{(i\nu_m)}
+\newcommand{\inn}{i\nu_n}
+\newcommand{\nun}{\nu_n}
+% *** To abolis h ***
+\newcommand{\iomb}{(i\om_n)} % [ to abolish ]
+\newcommand{\iommb}{(i\om_m)}
+%          ****
+\newcommand{\betk}{i\om_n-\te}
+\newcommand{\betf}{i\om_n-\eps_f}
+%
+% Hopping or interaction strength
+\newcommand{\Jij}{J_{ij}}
+\newcommand{\tij}{t_{ij}}
+%
+% ---- Real frequencies ---
+\newcommand{\momb}{(-\om)}
+\newcommand{\betr}{\om^+-\eps_f}
+\newcommand{\bets}{\om^+-S^c_{i\sig}\omb}
+\newcommand{\omp}{\om^+}
+\newcommand{\omz}{\om_0}
+\newcommand{\omzp}{\om_0^+}
+\newcommand{\omph}{{\bs{\om}^{+}}'}
+\newcommand{\omb}{(\om)}
+\newcommand{\nub}{(\nu)}
+\newcommand{\omepb}{(\om,\eps)}
+\newcommand{\epomb}{(\eps,\om)}
+\newcommand{\ompb}{(\om')}
+\newcommand{\ompldb}{(\om+\del)}
+\newcommand{\Omb}{(\Om)}
+\newcommand{\ombp}{(\om')}
+\newcommand{\omzb}{(\om_0)}
+\newcommand{\mombp}{(-\om')}
+\newcommand{\omc}{\om_c}
+%
+% ---- Green's function (obsolete) ---
+\newcommand{\gco}{G^{cc}_\ks(i\om_n)}
+\newcommand{\gcfo}{G^{cf}_\ks(i\om_n)}
+\newcommand{\gfco}{G^{fc}_\ks(i\om_n)}
+\newcommand{\gfo}{G^{ff}_\ks(i\om_n)}
+%
+\newcommand{\epsb}{(\eps)}
+\newcommand{\zb}{{(0)}}
+\newcommand{\taub}{(\tau)}
+\newcommand{\te}{\tilde{\eps}_{\bf k}}
+\newcommand{\tmu}{\tilde{\mu}}
+\newcommand{\tH}{\h \tilde{H}}
+\newcommand{\sen}{\Sig^f_\sig\iomb}
+\newcommand{\aln}{\betf-\sen}
+\newcommand{\pim}{\f{1}{\pi}\mr{Im}}
+\newcommand{\gcm}{G^{cc}_\ks(\om)}
+\newcommand{\gcfm}{G^{cf}_\ks(\om)}
+\newcommand{\gfcm}{G^{fc}_\ks(\om)}
+\newcommand{\gfm}{G^{ff}_\ks(\om)}
+\newcommand{\GR}{G^R}
+\newcommand{\GA}{G^A}
+\newcommand{\GK}{G^K}
+%%%%%%% Spin and number op.s %%%%%%%%%%%%%%
+\newcommand{\Sp}{\h S^{+}}
+\newcommand{\Sm}{\h S^{-}}
+\newcommand{\n}{\hat n}
+\newcommand{\niu}{\hat n_{i\ua}}
+\newcommand{\nid}{\hat n_{i\da}}
+\newcommand{\bsig}{{\bar{\sigma}}}
+\newcommand{\ksig}{{\bf k\,\sigma}}
+\newcommand{\nfo}{n_F\omb}
+%%%%%%%%% Constants %%%%%%%%%%%%%%%%%
+\newcommand{\ih}{i\hbar}
+\newcommand{\ibh}{\f{i}{\hbar}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\epn}{\eps_n}
+\newcommand{\epsk}{\eps_\kv}
+\newcommand{\epm}{\eps_m}
+\newcommand{\epl}{\eps_l}
+\newcommand{\epi}{\eps_1}
+\newcommand{\epii}{\eps_2}
+\newcommand{\epiii}{\eps_3}
+\newcommand{\omn}{\om_n}
+% \newcommand{\omm}{\om_m} % abolishing 
+\newcommand{\oml}{\om_l}
+\newcommand{\rhr}{\rh^R}
+\newcommand{\rhs}{\rh^S}
+\newcommand{\nf}{{n_F}}
+\newcommand{\bnf}{{\bar{n}_F}}
+\newcommand{\brho}{\bar{\rho}}
+\newcommand{\kf}{{k_F}}
+\newcommand{\nb}{n_B}
+\newcommand{\ts}{t_\ast}
+\newcommand{\sigx}{\f{\sig U\|mu|}{2}}
+\newcommand{\kb}{({\bf k})}
+\newcommand{\Kb}{{\bf K}}
+\newcommand{\Kbs}{\Kb^{\ast}}
+%%%%%%%%%%% SUBSCRIPTS %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\is}{{i\sig}}
+\newcommand{\js}{{j\sig}}
+\newcommand{\ibs}{i\bsig}
+\newcommand{\iss}{i\sig\sig'}
+%\newcommand{\isp}{i\sig'}
+%%%%%%%%%%% Conditions etc. %%%%%%%%%%%%%%
+\newcommand{\so}{\therefore}
+\newcommand{\as}{\because}
+%%%%%%%%%%%% Large Expressions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\hmodel}{\hat
+H=-\sum_{\lngl ij\rngl,\sigma}t_{ij}(c_{i\sigma}\y
+c_{j\sigma}^{\ph 0}+\textrm h.c.) +\eps_d\sum_{i\sigma}c_{i\sigma}\y
+c_{i\sigma}^{\ph 0} +U\sum_i \hat n_{i\ua}\hat n_{i\da}}
+%-----------------------------------------------
+%
+\newcommand{\hmodelhf}{\hat
+H^{HF}=-\sum_{<ij>,\sigma}t_{ij}(c_{i\sigma}\y
+c_{j\sigma}^{\ph 0}+\textrm h.c.)
++\seuhf \hat n_{i\bar{\sig}}
+}
+%
+\newcommand{\HMispace}{
+\h H=-\sum_{\lngl i j\rngl,\sig} t_{ij} c\y_{i\sig} c\py_{j\sig}
++(\eps_d-\mu)\sum_{i\sig} c\y_{i\sig} c\py_{i\sig}
++U\sum_i \n_{i\ua} \n_{i\da}
+}
+%----------------------------------------------
+\newcommand{\seuhf}
+{\tilde{\Sig}_{i\sig}^0}
+%
+\newcommand{\seuhfeq}
+{\seuhf=\eps_d+U\lngl \hat n_{i\bar{\sig}} \rngl=
+\eps_d + \f{U}{2}[\bar{n}_i-\sig \bar{m}_i]}
+%
+\newcommand{\sea}{\tilde{\Sig}_{A\sig}\omb}
+\newcommand{\seb}{\tilde{\Sig}_{B\sig}\omb}
+%
+\newcommand{\selmaa}{\tilde{\Sig}_{A\sig}\omb}
+\newcommand{\selmab}{\tilde{\Sig}_{B\sig}\omb}
+%%%%%%%%%%%%kaida %%%%%%%%%%%%%%%%%
+\newcommand{\bul}{$\bullet$\hspace*{0.2cm}}
+%\newcommand{\bul}{{\dgreen\mbox{$\bullet$}\hspace*{0.2cm}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\bct{\begin{comment}}
+\def\ect{\end{comment}}
+%\newcommand{\bct}{\begin{comment}}
+%\newcommand{\ect}{\end{comment}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Special units  
+\newcommand{\dg}{^\circ}
+%
+% Caligraphy
+%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\cH}{\mc H}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Color etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\tc}{\textcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recently added
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bull}{{\Large\mbox{$\bullet$}\hspace*{0.3cm}}}
+\newcommand{\sqr}{$\square\hspace*{0.3cm}$}
+\newcommand{\bsqr}{$\blacksquare\hspace*{0.1cm}$}
+\newcommand{\qkin}{\f{\hbar\sq}{2m}} %kinetic factor in Q.M.
+\newcommand{\qmom}{\f{\hbar\sq {\bf k\sq}}{2m}} %kinetic factor in Q.M.
+\newcommand{\mcA}{{\mc A}}
+\newcommand{\mcC}{{\mc C}}
+\newcommand{\mcD}{{\mc D}}
+\newcommand{\mcE}{{\mc E}}
+\newcommand{\mcF}{{\mc F}}
+\newcommand{\mcG}{{\mc G}}
+\newcommand{\mcH}{{\mc H}}
+\newcommand{\mcL}{{\mc L}}
+\newcommand{\mcN}{{\mc N}}
+\newcommand{\mcO}{{\mc O}}
+\newcommand{\mcP}{{\mc P}}
+\newcommand{\mcS}{{\mc S}}
+\newcommand{\mcT}{{\mc T}}
+\newcommand{\bmcT}{\bar{\mc T}}
+\newcommand{\mcU}{{\mc U}}
+\newcommand{\mcV}{{\mc V}}
+\newcommand{\ord}{{\mc O}}
+\newcommand{\tG}{\tilde{G}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Particles %%%%%%%%%%%%%%%
+\newcommand{\el}{e^{-}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Set Theory %%%%%%%%%%%%%%%%
+\newcommand{\nul}{\varnothing}
+%%%%% Sums again %%%%%%%%%%%%%%%%%
+\newcommand{\smab}{\sum_{aa'\atop {bb'} }}
+\newcommand{\smcd}{\sum_{cc'\atop {dd'} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\def\blgn{{\begin{align}}}
+%\def\elgn{{\end{align}}}
+\def\cont{\contraction}
+\def\bcont{\bcontraction}
+\def\blgn#1\elgn{\begin{align}#1\end{align}}
+%\def\bvrb#1\evrb{\begin{verbatim}#1\end{verbatim}}
+%\newcommand\bvrb#1\evrb{\begin{verbatim}#1\end{verbatim}}
+\def\bsplt#1\esplt{\begin{split}#1\end{split}}
+\def\bfbox#1\efbox{\begin{empheq}[box=\fbox]{align}#1\end{empheq}}
+\def\blbbox#1\blebox{{\blue{\begin{empheq}[box=\widefbox]{align}#1\end{empheq}}}}
+\def\bpnkbox#1\epnkbox{{\magenta{\begin{empheq}[box=\widerfbox]{align}#1\end{empheq}}}}
+\newcommand{\avg}[1]{\lngl{#1}\rngl}
+%%%%%%%%%% References %%%%%%%%%%
+%------inspired from iopart.cls -----------
+%\newcommand{\eref}[1]{eq. (\ref{#1})}
+\newcommand{\bref}[1]{(\ref{#1})}
+\newcommand{\chref}[1]{Chap.~\ref{#1}}
+\newcommand{\eref}[1]{Eq. (\ref{#1})}
+\newcommand{\erefs}[1]{Eq.s (\ref{#1})}
+%\newcommand{\birefs}[1][2]{Eq.s (\cref{#1}) and (\cref(#2))}
+\newcommand{\Erefs}[1]{Eq.s (\ref{#1})}
+\newcommand{\sref}[1]{sec.~\ref{#1}}
+\newcommand{\ssref}[1]{subsec.~\ref{#1}}
+\newcommand{\Ssref}[1]{Subsec.~\ref{#1}}
+\newcommand{\fref}[1]{Fig.~\ref{#1}}
+%\newcommand{\fref}[1]{figure~\ref{#1}}
+\newcommand{\tref}[1]{table~\ref{#1}}
+\newcommand{\Eref}[1]{Equation (\ref{#1})}
+\newcommand{\Sref}[1]{Sec.~\ref{#1}}
+\newcommand{\Fref}[1]{Fig.~\ref{#1}}
+\newcommand{\Tref}[1]{Table~\ref{#1}}
+\newcommand{\stref}[1]{Step~\ref{#1}}
+%%%%%%%%%%%%%% Matrices %%%%%%%%%%%%
+\newcommand{\Tr}{\mr{Tr}} % Trace
+\newcommand{\tr}{\text{tr}} % Trace
+%\newcommand{\det}{\mr{det}}
+%%%%%%%%%% real and imaginary %%%%%%%%%%%
+\newcommand{\re}{\mr{Re}}
+\newcommand{\im}{\mr{Im}}
+%%%%%%%%%%%  Conjugates %%%%%%%%%%%
+\newcommand{\phic}{\phi^*}
+\newcommand{\bphi}{{\bar\phi}}
+\newcommand{\bpsi}{{\bar\psi}}
+%--- adde Jan 23
+\newcommand{\rvb}{(\rv)}
+\newcommand{\rvbp}{(\rv')}
+% blackboard 
+\newcommand{\bbone}{\mathbb 1}
+\newcommand{\bbr}{\mathbb R}
+\newcommand{\bbc}{\mathbb C}
+%
+% --- Equations, Definitions -----------
+\newcommand{\threepartdef}[6]
+{
+	\left\{
+		\begin{array}{lll}
+			#1 & \mbox{if } #2 \\
+			#3 & \mbox{if } #4 \\
+			#5 & \mbox{if } #6
+		\end{array}
+	\right.
+}
+
+\def\tblue{\textcolor{blue}}
+\def\bemph#1{\textbf\textit{#1}}
+%=========== Common texts
+\newcommand{\adv}{{\text{adv}}}
+\newcommand{\AL}{{\text{AL}}}
+\newcommand{\at}{{\rm{at}}}
+\newcommand{\BZ}{{\text{BZ}}}
+\newcommand{\cp}{\text{c.p.}}  % counter part
+\newcommand{\eff}{{\rm{eff}}}
+\newcommand{\ext}{{\text{ext}}}
+\newcommand{\frst}{\text{1st}}
+\newcommand{\hc}{\text{h.c.}}
+\newcommand{\loc}{\text{loc}} % local
+\newcommand{\kB}{k_B}
+\newcommand{\scnd}{\text{2nd}}
+\newcommand{\SE}{Schr\"odinger eq.}
+\newcommand{\MF}{{\text{MF}}}
+\newcommand{\HF}{{\text{HF}}}
+\newcommand{\FBZ}{{\text{FBZ}}}
+\newcommand{\Res}{{\text{Res}}}  % Residue
+\newcommand{\ret}{{\text{ret}}}  
+\newcommand{\SOPT}{{\text{SOPT}}}
+\newcommand{\RPA}{{\text{RPA}}}
+\newcommand{\LMA}{{\text{LMA}}}
+\newcommand{\IPT}{{\text{IPT}}}
+\newcommand{\LHS}{{\text{LHS}}}
+\newcommand{\RHS}{{\text{RHS}}}
+\newcommand{\Rt}{{\text{R}}}
+\newcommand{\St}{{\text{S}}}
+\newcommand{\conv}{{\text{conv}}}
+\renewcommand{\min}{{\text{min}}}
+\renewcommand{\max}{{\text{max}}}
+\newcommand{\orb}{{\text{orb}}}
+%%%%%%%%%%%%%
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-4.0mu#1\mkern-1.5mu}\mkern 1.5mu}
+\newcommand{\wbar}[1]{\mkern 1.5mu\overline{\mkern-4.0mu#1\mkern-1.5mu}\mkern 1.4mu}
+\newcommand{\widebar}[1]{\mkern 1.5mu\overline{\mkern-4.0mu#1\mkern-1.5mu}\mkern 1.4mu}
+\newcommand*\widefbox[1]{\fbox{\hspace{1em}#1\hspace{1em}}}
+\newcommand\widerfbox[1]{\fbox{\hspace{1.5em}#1\hspace{1.5em}}}
+\newcommand{\ceil}[1]{\left \lceil #1 \right \rceil }
+\newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor }
+\def\wt#1{\overset {\sim} {#1} }
+%\newcommand\wt[1]{\overset{\sim}{#1}}
+\newcommand{\Wt}[1]{ \stackrel{\sim}{\smash{#1}\rule{0pt}{1.1ex} } }
+%%%%%%%%%%%%%
+\newcommand{\para}{\parallel}
+\newcommand\Myperm[2][n]{\prescript{#1\mkern-2.5mu}{}P_{#2}}
+\newcommand\Mycomb[2][n]{\prescript{#1\mkern-0.5mu}{}C_{#2}}
+\newcommand*{\perm}[2]{{}^{#1}\!P_{#2}}%
+\newcommand*{\comb}[2]{{}^{#1}C_{#2}}%
+%%%%%%%%%%%%%%%%%%%
+\newcommand{\shouldbe}{\overset{!}{=}}
+
+%%%%%%%%%%%%%%%%%  Matrices sophistication 
+\usepackage{etoolbox}
+\let\bmat\bordermatrix
+\patchcmd{\bmat}{8.75}{4.75}{}{}
+\patchcmd{\bmat}{\left(}{\left[}{}{}
+\patchcmd{\bmat}{\right)}{\right]}{}{}
+\newcommand{\bbmat}{\begin{bmatrix}}
+\newcommand{\ebmat}{\end{bmatrix}}
+%%  Enumerate sophistication
+% http://tex.stackexchange.com/questions/32798/a-step-by-step-environment
+\newenvironment{steps}[1]{\begin{enumerate}[label=#1 \arabic*]}{\end{enumerate}}
+\makeatletter
+\def\step{%
+   \@ifnextchar[ \@step{\@noitemargtrue\@step[\@itemlabel]}}
+%\def\@step[#1]{\item[#1]\mbox{}\\\hspace*{\dimexpr-\labelwidth-\labelsep}}
+\def\@step[#1]{\item[#1 :]}
+\makeatother
+
+%% Footnote 
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+%-------------------------
+\def\Q{{\red Q. }}
+\def\A{{\blue A. }}
+\renewcommand{\Ref}[1]{{\dgreen Ref.~{#1}}}
+%\def\BL{{\text {BL}}}
+%\newcommand{HCL}{{HCL}}}
+
+%--- Section, Chapter, etc
+\newcommand{\sss}{\subsubsection}
+
+%-- More
+\def\tbs{{[\red *to be shown]}}
+% -- Just a 2d array
+\newcommand{\arrtwo}[2]{\begin{array}[t]{#1}#2\end{array}} 

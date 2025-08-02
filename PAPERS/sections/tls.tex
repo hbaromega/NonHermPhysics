@@ -1,0 +1,71 @@
+\section{Digression: Two level system}
+In general a two-level Hamiltonian can be written as
+\blgn
+\h H_0=E_1|1\rngl\lngl 1| + E_2 |2\rngl\lngl 2|\,
+\elgn
+The Hamiltonian in the matrix form becomes
+\blgn
+H_0 =
+\bbmat
+E_1 &0\\
+0   &E_2
+\ebmat
+\elgn
+
+Now if we turn on an interaction $V$ between state $|1\rngl$ and $|2\rngl$,
+we get an interacting Hamiltonian
+\blgn
+\h H=E_1|1\rngl\lngl 1| + E_2 |2\rngl\lngl 2| + V|1\rngl\lngl 2| + V^*|2\rngl\lngl 1|\,
+\elgn
+which gets the matrix form
+\blgn
+{\bf H}=
+\bbmat
+E_1 &V\\
+V^*   &E_2
+\ebmat
+\elgn
+
+The eigenvalue equation becomes
+\blgn
+(E_1-E)(E_2-E)-|V|^2=0
+\elgn
+which yields two eigenvalues $E_+$ and $E_-$ given by
+\blgn
+E_\pm=(E_1+E_2)\pm\sqrt{(E_1-E_2)^2+4|V|^2}\,.
+\elgn
+
+Suppose we have the following Hamiltonian
+\blgn
+{\bf H}(k)
+=
+\bbmat
+h_0+h_z  &h_x-ih_y\\
+h_x+ih_y &h_0-h_z
+\ebmat
+\elgn
+
+Then the Hamiltonian can be written as
+\blgn
+H(k)=h^\mu(k)\sig_\mu=h_0(k)\bbone + \vec{h}(k).\vec{\sig}\,
+\elgn
+where $\bbone$ is the $2\times2$ unity matrix.
+
+With $\Tr(H)=2h_0$ and $\det (H)=h_0^2-h^2$, one finds the eigenvalues
+\blgn
+E_\pm=h_0\pm h(k)
+\label{eq:dispersion:tls}
+\elgn
+where 
+\blgn
+h(k)=||\vec{h}(k)||=\sqrt{h_x^2+h_y^2+h_z^2}\,.
+\elgn
+The corresponding normalized eigenvectors are (up to a phase factor)
+\blgn
+u_\pm(k)
+=\f{1}{\sqrt{1+(h_z+E_\pm^2)/(h_x^2+h_y^2)}}
+\bbmat
+E_\pm/(h_x+ih_y)\\
+1
+\ebmat\,.
+\elgn

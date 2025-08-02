@@ -1,0 +1,71 @@
+\section{Edge states}
+\alert{2 degenerate $E=0$ bands} 
+% \begin{figure}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/SSH_band_E_vs_v.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/SSH_modpsi_vs_site.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/SSH_barplot_edge1_vs_site.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/SSH_barplot_edge2_vs_site.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/SSH_barplot_bulk_vs_site.png}
+% \end{figure}
+\bi
+\i Edge states function as connectors/interfaces between 2 toplogical distinct phases
+[trivial ($\nu=0$) and non-trivial ($\nu=1$)] $\Ra$ \blue{Bulk-boundary correspondence (BBC)}.
+\ei
+
+%\subsection*{References}
+\bnu
+ \i Shen: Topolgical Insulator and Dirac Equation in Condensed Matter
+\i \url{http://optics.szfki.kfki.hu/~asboth/topins_course/2015-09-24-ELTE-Topins.pdf}
+\i %\url{https://phyx.readthedocs.io/en/latest/TI/Lecture\%20notes/1.html}
+ \enu
+
+
+
+%% =================================================================================
+
+
+\begin{comment}
+\subsection*{Berry phase:}
+The function $1+\cos ka\ge 0$ $\forall\,k$. Hence
+when $\delt>0$, we always have $d_x(k)=t(1+\cos ka) +\delt\,(1-\cos ka)>0$.
+Thus $d_x(k)$ sweeps no solid angle at $\delt>0$. On the other hand, 
+when $\delt<0$,  $d_x(k)=2\delt$ at $k=\pm \pi/a$; this  $d_x(k)$ sweeps an angle
+$2\pi$ {\red[more clear explanation needed, e.g. how it sweeps a solid angle]}.
+
+
+\section{Polarization in 1D}
+Electric polarization $\Pv$ is defined as the dipole moment per unit volume. 
+Polarization leads to the bound charge $\rho_b=-\grad.\Pv$ in the bulk and 
+surface/edge/end charge $\sig_b=\Pv.\ncap$ in 3D/2D/in. In the 1D we rename
+the end charge as $\Qe$ and it simply becomes the magnitude of polarization
+\blgn
+\Qe=P\,.
+\elgn
+ 
+The polarization in 1D can be identified with the Berry phase 
+of the occupied Bloch wavefunctions around the Brillouin zone:
+\blgn
+P=\f{e}{2\pi}\oint_\BZ A(k)dk\,.
+\elgn
+[{\bf N.B.} Detailed derivation is not straigh-forward, should be found in the literature.]\tbs
+
+
+\section{Thouless charge pump}
+  The integer charge pumped across a 1D insulator in one period of an adiabatic cycle
+is a topological invariant that characterizes the cycle. (Courtesy: Kane's slide)
+
+\blgn
+H(k,t+T)=H(k,t)\,
+\elgn
+leads to
+\blgn
+\Del P=\f{e}{2\pi}\oint dk\, (A(k,T)-A(k,0)=ne\,,
+\elgn
+where
+\blgn
+n=%\f{1}{2\pi}\nint_{T^2} \Fv dk\,dt\,.
+\elgn
+\end{comment}
+
+
+%\chapter{Non-Hermitian SSH}

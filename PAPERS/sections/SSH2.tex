@@ -1,0 +1,52 @@
+\section{Back to the SSH model}
+\subsection*{Dispersion:}
+Now if we compare our $k$-space SSH Hamiltonian in 
+\eref{eq:Hk:SSH:compact}, we notice 
+$h_0$ and $\vec{h}(k) = \vec{d}(k)$. Therefore
+from \eref{eq:dispersion:tls}
+\blgn
+E_k
+&=\pm |\dv(k)|=\pm\sqrt{(t_+ + t_-\cos ka)^2+t_-^2\sin^2 ka}\label{eq:disp:SSH:1}\\
+&=\pm \sqrt{(t_+ - t_-)^2+4t_+t_-\cos^2(ka/2)}\non\\
+&=\pm \sqrt{(4 \del^2+4t_+t_-\cos^2(ka/2)}\,.
+\label{eq:disp:SSH:2}
+\elgn
+with 
+$d_x(k)\equiv\tp+\tm\cos ka$, $d_y(k)\equiv \tm \sin ka$.
+
+\begin{comment}
+\begin{figure}[!htp]
+\centering
+\includegraphics[height=1cm,clip]{\NHHMDIR/SSH_chain_Asboth.png}
+%\caption{Su-Schrieffer-Heeger (SSH) chains in two different confi.}
+\end{figure}
+\end{comment}
+
+\subsection*{Other Nomenclatures:}
+In many literatures, the intracell hopping $\tp = t+\del$
+is denoted by $v$ and intercell hopping $\tm = t-\del$
+is denoted by $w$. Now onward, we shall follow this notation
+and according to it,
+\blgn
+d_x(k) &\equiv v+w\cos ka; \quad d_y(k)\equiv w \sin ka\,
+\label{eq:dx:dy:in:v:w}
+\elgn
+and
+\blgn
+E(k)=\pm\sqrt{v^2+w^2+2vw\cos ka}\,.\non
+\elgn
+
+From \eref{eq:dx:dy:in:v:w},
+we get
+\blgn
+(d_x-v)^2 + d_y^2 &= w^2
+\elgn
+which describes a circle of radius $w$, centered at $(v,0)$.
+
+%
+% \begin{figure}[!htp]:
+% \centering
+% \includegraphics[height=5cm,clip]{\NHHMDIR/SSH_dispersion_winding_no.png}
+% %\caption{Su-Schrieffer-Heeger (SSH) chains in two different confi.}
+% \end{figure}
+\blfootnote{Courtesy: Asb\'oth \etal, \url{arXiv:1509.02295v1} }

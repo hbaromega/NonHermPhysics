@@ -3,22 +3,5 @@
 \tocdepth@munge 
 \contentsline {section}{\numberline {}Contents}{2}{section*.3}%
 \tocdepth@restore 
-\contentsline {section}{\numberline {I}Introduction}{3}{section*.4}%
-\contentsline {section}{\numberline {II}Hatano-Nelson model: A flavor of non-Hermiticity in a lattice}{3}{section*.5}%
-\contentsline {section}{\numberline {III}SSH model}{3}{section*.7}%
-\contentsline {section}{\numberline {IV}Reciprocal space representation}{4}{section*.9}%
-\contentsline {section}{\numberline {V}Digression: Berry phase}{5}{section*.10}%
-\contentsline {section}{\numberline {VI}Digression: Two level system}{6}{section*.11}%
-\contentsline {section}{\numberline {VII}Back to the SSH model}{6}{section*.12}%
-\contentsline {subsection}{\numberline {}Dispersion:}{6}{section*.13}%
-\contentsline {subsection}{\numberline {}Other Nomenclatures:}{7}{section*.14}%
-\contentsline {section}{\numberline {VIII}Winding number ($\nu $): The rubber band analogy}{7}{section*.16}%
-\contentsline {subsection}{\numberline {}Formula 4}{8}{section*.19}%
-\contentsline {section}{\numberline {IX}Edge states}{8}{section*.20}%
-\contentsline {section}{\numberline {X}Non-Hermitian Topological Insulators}{9}{section*.22}%
-\contentsline {section}{\numberline {XI}Exceptional points}{9}{section*.24}%
-\contentsline {section}{\numberline {XII}Edge states}{9}{section*.26}%
-\contentsline {section}{\numberline {XIII}Non-Bloch Band Theory}{9}{section*.28}%
-\contentsline {section}{\numberline {XIV}Project proposal}{9}{section*.29}%
-\contentsline {section}{\numberline {}References}{10}{section*.30}%
-\contentsline {section}{\numberline {}References}{10}{section*.31}%
+\contentsline {section}{\numberline {I}Hatano-Nelson model: A flavor of non-Hermiticity in a lattice}{2}{section*.4}%
+\contentsline {section}{\numberline {}References}{4}{section*.10}%

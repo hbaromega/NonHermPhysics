@@ -1,0 +1,55 @@
+\section{Reciprocal space representation}
+\def\tc{\tilde{c}}
+Now we want to write the Hamiltonian in the reciprocal ($k$) space. 
+Again we can define the Fourier component of an annihilation operator:
+\blgn
+c_{\al k}\equiv \f{1}{\sqrt L}\sum_{i=1}^L e^{-ik.x_i} c_{\al i};\quad \al=A,B\,.
+\elgn
+[ Note: We have total $2L$ lattice sites consisting of $L$ number of $A$ and $B$ sublattices.]
+
+Considering lattice coordinate at site $i$ to be $x_i$ with lattice spacing
+$a$ (i.e., nearest neighbor site's position $x_{i+1}=x_i+a$), we can rewrite the Hamiltonian
+in \eref{eq:H:SSH:ispace}: 
+\blgn
+\h H 
+&= \sum_i \sum_{kk'}\bigg[\bigg\{\tp  c\y_{Ak}c\py_{Bk}e^{ik x_i}e^{-ik' x_i} + \hc\bigg\}\non\\
+&\quad+\bigg\{\tm c\y_{Ak}c\py_{Bk}e^{ik(x_i+a)}e^{-ik' x_i} + \hc\bigg\}\bigg]\non\\
+%%
+&= \sum_{kk'}\bigg[\bigg\{\tp  c\y_{Ak}c\py_{Bk}\del_{kk'} + \hc\bigg\}\non\\
+&\quad+\bigg\{\tm c\y_{Ak}c\py_{Bk}\del_{kk'} e^{-ik' x_i} + \hc\bigg\}\bigg]\non\\
+&\qquad\qquad\quad\mbox{[use $\sum_i e^{i(k-k')x_i}=\del_{kk'}$]}\non\\
+%%
+&=\sum_k[\{\tp c\y_{Ak}c\py_{Bk}+ \tp^* c\y_{Bk}c\py_{Ak}\}\non\\
+&\quad+\{\tm c\y_{Ak}c\py_{Bk}e^{-ik a} + \tm^*c\y_{Bk}c\py_{Ak} e^{ika}\}]\non\\
+&\equiv \sum_k H_k\,.
+\elgn
+
+Thus we get the momentum ($k$) dependent Hamiltonian (for simplicity, we consider the hopping parameters to be real, i.e. $\tp^*=\tp$, $\tm^*=\tm$)
+\blgn
+H_k
+&=\tp (c\y_{Ak}c\py_{Bk}+ c\y_{Bk}c\py_{Ak})
++\tm (c\y_{Ak}c\py_{Bk}e^{-ik a} + c\y_{Bk}c\py_{Ak} e^{ika})\\
+&=(\tp+\tm e^{-ik a})c\y_{Ak}c\py_{Bk} + (\tp+\tm e^{ika}) c\y_{Bk}c\py_{Ak}\,.
+\label{eq:Hk:SSH:matrix}
+\elgn
+
+Like what we did in the direct lattice representation case, we choose a 2-dimensional spinor
+${\bs\Psi\y_k}\equiv [c\y_{Ak}\, c\py_{Bk}]$ and write $H_k$ in a $2\times2$ matrix form: 
+$H_k={\bs\Psi\y_k}{\bf H}_k{\bs\Psi_k}$
+where
+\blgn
+{\bf H}_k
+\equiv
+\bbmat
+0 & \tp+\tm e^{-ika}\\
+\tp+\tm e^{ika} & 0
+\ebmat\,.
+\elgn
+
+Then \eref{eq:Hk:SSH:matrix} can be written in the following form:
+\blgn
+{\bf H}_k=d_x {\bs\sig}_x + d_y {\bs\sig}_y={\vec d}(k).{\vec\sig}\,
+\label{eq:Hk:SSH:compact}
+\elgn
+where $d_x(k)\equiv\tp+\tm\cos ka$, $d_y(k)\equiv \tm \sin ka$; ${\bs\sig}_x=\bbmat 0 &1\\ 1 &0\ebmat$ 
+and  ${\bs\sig}_y=\bbmat 0 &-i\\ i &0\ebmat$.

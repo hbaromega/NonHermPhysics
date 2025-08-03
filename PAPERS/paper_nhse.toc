@@ -1,7 +1,0 @@
-\contentsline {title}{Non-Hermitian Skin Effect: A Primer}{1}{section*.2}%
-\contentsline {abstract}{Abstract}{1}{section*.1}%
-\tocdepth@munge 
-\contentsline {section}{\numberline {}Contents}{2}{section*.3}%
-\tocdepth@restore 
-\contentsline {section}{\numberline {I}Hatano-Nelson model: A flavor of non-Hermiticity in a lattice}{2}{section*.4}%
-\contentsline {section}{\numberline {}References}{4}{section*.10}%

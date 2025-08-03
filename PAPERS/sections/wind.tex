@@ -1,0 +1,45 @@
+\section{Winding number ($\nu$): The rubber band analogy} 
+Winding number is a  many times a curve winds around a specific point $z_0$. 
+% \begin{figure}
+% 	\centering\includegraphics[height=4cm,clip]{\NHHMDIR/Winding_Number_wiki.png}
+% \end{figure}
+
+\alert{Our case:}
+ $z_0 = (d_x=0,d_y=0)$ $\nu=1$ is {\blue topologically non-trivial!}
+% \begin{figure}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/delzero_winding.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/delposi_winding.png}
+% 	\includegraphics[height=3cm,clip]{\NHHMDIR/delnegi_winding.png}
+% \end{figure}
+
+The winding number can be mathematically formualated as
+[{\red Check derivation!}]:
+\blgn
+\nu = \f{1}{2\pi} \int_{-\pi}^{\pi}dk\,\bigg( \h {\bf d}(k)\times \f{d}{dk}  \h {\bf d}(k)\bigg)_z\,.
+\elgn
+When the intracell hopping dominates over the intercell hopping (i.e. $v > w$), the winding number 
+$\nu = 0$. On the other hand, when $v < w $, $\nu = 1$. to change $\nu$, we need to change the path 
+of $\dv(k)$
+
+\subsection*{Formula 4}
+Since $E(k)=\pm|\dv(k)|$, we have
+\blgn
+ \ln E(k) &= \ln |\dv(k)| + i\arg(\dv(k))\,.\non\\
+ \Ra \pdk \ln E(k) &= \pdk\ln |\dv(k)| + i\pdk\arg(\dv(k))\,.
+\elgn
+
+Now we know
+\blgn
+\nu = \finvtwpi \oint_C \pdk\arg(\dv(k)) \quad\mbox{[see above]}\,.  
+\elgn
+
+Also,
+\blgn
+\nu = \f{1}{2\pi i} \oint_C dk\, \pd_k \ln E_k\,. 
+\elgn
+
+Also,
+\blgn
+\nu = \f{i}{2\pi} \int_{C_\beta} dq\, q\inv. 
+\elgn
+ 

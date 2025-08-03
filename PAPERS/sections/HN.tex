@@ -1,0 +1,91 @@
+\section{Hatano-Nelson model: A flavor of non-Hermiticity in a lattice}
+\begin{figure}[H]
+    \centering 
+    \input{FIGS_MANUS_NHSE/hn_lattice.tex}
+    \caption{Diagram showing the hopping in Hatano-Nelson Model}
+\end{figure}%
+The Hatano-Nelson model (non-disordered) is the simplest tight-binding
+lattice model where the left and right-moving hopping amplitudes are unequal
+(\emph{non-reciprocal}). The Hamiltonian for spinless particles in one dimension reads,
+\blgn
+ \hHN = \sum_{i=0}^{L-1} \big[t_R c\y_i c\py_{i+1} + t_L c\y_{i+1} c\py_i \big]\,,   
+\elgn
+where $L$ is the number of sites in the lattice and $t_R$ and $t_L$ are the right and left hopping
+amplitudes. The Hamiltonian is written using the second quantisation formalism, where $c\py_i$ and  $c\y_i$ are the particle annihilation and
+creation operators at lattice site $i$, respectively. {The Hamiltonian becomes non-Hermitian when $t_L\neq t_R$, that is, \textit{asymmetric hopping}.} 
+
+We can express the anihilation operator in the momentum space as:
+\blgn
+c_{i} = \f{1}{\sqrt L}\sum_{k=0}^{L-1} e^{ikx_i} c_{k}.
+\elgn 
+where $x_i$ is the coordinate or position of site $i$. We then substitute this in the Hamiltonian:
+\blgn
+ \hHN&= \sum\limits_{L}\sum\limits_k\sum\limits_{k'} t_R e^{-ikx_i}e^{ik'(x_{i}+a)}  c\y_k c\py_{k'} +t_L e^{-ik(x_i+a)}e^{ik'x_{i}}  c\y_k c\py_{k'} \\
+ &= \sum\limits_{L}\sum\limits_k\sum\limits_{k'} \qty(t_R e^{ix_i(k'-k)}e^{ik'a}+t_L e^{ix_i(k'-k)}e^{-ika})c\y_k c\py_{k'}\\
+ &=\sum\limits_k \qty(t_Re^{ika} + t_Le^{-ika})c\y_k c\py_k \qquad\qquad\quad \qty(\because \sum\limits_{i}e^{i(k-k')x_i} = \delta_{kk'} )\\
+ &=\sum\limits_k E(k)c\y_k c\py_k
+\elgn
+where we utilize $x_{i+1}-x_i=a$, $a$ being the lattice constant (spacing between two consecutive lattice sites). Hence we derive the energy spectrum in terms of the wave-number as:
+$$E(k) = t_Re^{ika} + t_Le^{-ika} = (t_R+t_L)\cos(ka) + i(t_L -t_R)\sin(ka), \qquad k=\frac{2\pi i}{L} \quad (i = 0,
+\ldots, L-1)$$
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{FIGS_MANUS_NHSE/HN_herm.pdf}
+    \caption{Energy varying with $k$ for the Hermitian Hatano-Nelson Model. The parameters taken are $a=1,t=1$ }
+\end{figure}
+Note that, if $t_L=t_R=t$, then $E(k) = 2t\cos (ka)\in \re$ and the model becomes Hermitian, with real eigenvalues. However, if $t_L\neq t_R$, we will have a finite value for the imaginary part of the energy too. 
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=0.35]{FIGS_MANUS_NHSE/HN_Ek.pdf}
+    \caption{For $t_L\neq t_R$, the imaginary and the real part as a function of $k$ defines an ellipse and winds around the origin.}
+\end{figure}\label{fig:Ek}
+To this extent, we can define the spectral winding number for the system:
+$$\omega = \frac{1}{2\pi i}\int\limits_{-\pi}^{\pi}\dd k \partial_k \ln E(k) = \begin{cases}
+    +1, & |t_L|>|t_R|\\
+    -1, & |t_L|<|t_R|
+\end{cases}$$
+From Figure. \ref{fig:Ek}, we cannot observe the orientation of the winding, however, the transition between the two windings is clear, since at $t_L=t_R$, the ellipses collapse and we have a flat line (since $\Im E(k) = 0$)
+In the equivalent matrix representation under the periodic boundary and open chain case, we have the following:
+\[
+[\hHN]_{OBC} = 
+\begin{pmatrix}
+0 & t_L& 0 & 0 &\cdots\\
+t_R& 0& t_L& 0 &\cdots\\
+0 & t_R & 0& t_L &\cdots\\
+0 & 0 & t_R& 0& \cdots\\
+\vdots& \vdots& \vdots& \vdots &\ddots
+\end{pmatrix} \qquad \quad  
+[\hHN]_{PBC} = 
+\begin{pmatrix}
+0 & t_L& 0 & 0 &\cdots &t_R\\
+t_R& 0& t_L& 0 &\cdots & 0\\
+0 & t_R & 0& t_L &\cdots &0\\
+0 & 0 & t_R& 0& \cdots &0\\
+\vdots& \vdots& \vdots& \vdots &\ddots \\
+t_L & 0 &0&0
+\end{pmatrix}
+\]
+Using exact diagonalisation, we can hence find the energy eigenvalues of the Hatano-Nelson Hamiltonian. Under open boundary condition, all the eigenstates of the Hatano-Nelson Model are exponentially localized on the boundary. The direction of localisation depends on the hopping term, that is, the states are localized on the left if $t_L>t_R$ and otherwise,on the right. This phenomenon is termed \textit{non-Hermitian skin effect}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{FIGS_MANUS_NHSE/HN_skin.pdf} 
+    \caption{Figure showing the localisation of states along the boundary. Parameters taken, for blue plot $t_L =1.5, t_R=0.5$ and for red plot  $t_L =0.5, t_R=1.5$, $N=100$.}
+\end{figure}
+For a non-Hermitian system, since $H^\dagger\neq H$, it is not guaranted that a state $\ket{\psi}$ satisfying $H\ket{\psi} = E\ket{\psi_R}$ will also satisfy the conjugate equation. Thus, we define two vectors for the Hamiltonian:
+\begin{align*}
+    \text{Right Eigenvector:\qquad} H\ket{\psi_R} = E\ket{\psi_R}\\
+    \text{Left Eigenvector:\qquad} \bra{\psi_L} H = E \bra{\psi_L}
+\end{align*}
+Studying the left and right eigenvectors separately, we can observe the skin-effect. We also define the \textit{biorthogonal localization} by: $$\mathcal C = \bra{\psi_L}\Pi_n \ket{\psi_R}, \qquad \text{where } \Pi_n = c\y_n \ket{0}\bra{0}c\py_n \text{ is the projector onto site $n$}$$
+If the right eigenstate is localized to the right, the left eigenstate is localized to the left and hence the biorthogonal localisation nullifies this localisation, giving a `bulk-state' picture in the biorthogonal formalism. 
+\begin{figure}[H]
+    \centering 
+    \includegraphics[scale=0.5]{FIGS_MANUS_NHSE/E_pbc_obc.pdf}
+    \caption{$\Re E$ vs. $Im E$ plot for both OBC and PBC case with parameters $N=50,t_L=0.6, t_R=1.0$. We can see that while the PBC eigenvalues trace an ellipse, the OBC eigenvalues are purely real.  }
+\end{figure}
+%% FIG: HN chain
+% \begin{figure}[!htp]
+% \centering
+% \includegraphics[height=1.5cm,clip]{\FIGDIR/HNchain.png}
+% \caption{Hatano-Nelson chain with non-reciprocal hopping parameters $t_R$ and $t_L$.}
+% \end{figure}

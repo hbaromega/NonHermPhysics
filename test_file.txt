@@ -1,0 +1,1 @@
+This file is to check if update is working from the local computer.
